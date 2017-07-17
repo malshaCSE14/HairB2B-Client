@@ -3,6 +3,7 @@
  */
 var register = angular.module('signin',[]);
 register.controller('signinCtrl', function($scope,$http){
+    // templateURL
     $scope.submit = function(){
         $scope.validLogin = null;
         var req = {
@@ -17,9 +18,11 @@ register.controller('signinCtrl', function($scope,$http){
         $http(req).then(
             function(res){
                 if(res.data.status==='successful'){
+                    method: 'GET',
+                    $window.location.href = 'http://localhost:3000/edit-profile';
                     $scope.validLogin = true;
                     console.log(res.data.status);
-                }else if(res.data.status='failed'){
+                }else if(res.data.status==='failed'){
                     $scope.validLogin = false;
                     console.log(res.data.status);
                 }else{

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <script src="../../assets/angular.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-bar clearfix">
+        <div class="top-bar-links">
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../signup/signup.html">Sign Up</a></li>
+                <li><a href="../signin/signin.html">Sign In</a></li>
+
+            </ul>
+        </div><!-- toppp-bar-links -->
+
+    </div><!-- topbar -->
+</div>
+<div class="container">
+
+    <form class="form-horizontal">
+        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="../../assets/img/ProfilePics/profileDefault.png" class="img-circle img-responsive"> </div>
+
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Edit Profile</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="filebutton">update profile picture</label>
+                <div class="col-md-4">
+                    <input id="filebutton" name="filebutton" class="input-file" type="file">
+                </div>
+            </div>
+
+            <!-- name -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput1">Name</label>
+                <div class="col-md-4">
+                    <input id="textinput1" name="textinput" type="text" placeholder="trade show name" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!--job categories-->
+            <!--Default Location-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="selectbasic1">City</label>
+                <div class="col-md-4">
+                    <select id="selectbasic1" name="selectbasic1" class="form-control">
+                        <option value="1">Sydney</option>
+                        <option value="2">Melbourne</option>
+                        <option value="3">Perth</option>
+                        <option value="4">Canberra</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput2">Job Type</label>
+                <div class="col-md-4">
+                    <input id="textinput2" name="textinput" type="text" placeholder="date attended" class="form-control input-md">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput3">Rate</label>
+                <div class="col-md-4">
+                    <input id="textinput3" name="textinput3" type="text" placeholder="date attended" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textarea">Description</label>
+                <div class="col-md-4">
+                    <textarea class="form-control" id="textarea" name="textarea">trade show introduction</textarea>
+                </div>
+            </div>
+
+            <!-- File Button -->
+
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton"></label>
+                <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">submit</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div>
+<div class="wrapper">
+    <footer>
+        <div class="footercol">
+            <a href="">About Us</a>
+        </div><!-- footercol -->
+        <div class="footercol">
+            <a href="">Contact Us</a>
+
+        </div><!-- footercol -->
+        <div class="footercol">
+            <a href="">FAQ</a>
+
+        </div><!-- footercol -->
+        <div class="footercol">
+            <a href="">iOS App</a>
+
+
+        </div><!-- footercol -->
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-image: url("../../assets/img/profileBackground.jpg");
+    height: 100%;
+    width: 100%;
+    background-color: #cccccc;
+    /* Center and scale the image nicely */
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin: 100px;
+
+    padding: 50px;
+
+    /*background: white;*/
+    background: rgb(158, 120, 75); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 193, 158, 0.7);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(158, 120, 75, 0.3);
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(159, 123, 72, 0.3);
+}
